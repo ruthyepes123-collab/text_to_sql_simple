@@ -14,7 +14,7 @@ class Persona(Base):
     nombre = Column(String)
     edad = Column(Integer)
 
-# Crear la tabla si no existe
+
 Base.metadata.create_all(engine)
 
 # --- Función básica de "Text-to-SQL" ---
@@ -53,7 +53,7 @@ def interpretar_texto(texto):
     return "Instrucción no reconocida."
 
 
-# --- Ejemplo de uso ---
+
 if __name__ == "__main__":
     print("=== Sistema Text-to-SQL Básico ===")
     print("Ejemplos:")
