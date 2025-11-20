@@ -53,7 +53,7 @@ def interpretar_texto(texto):
     return "Instrucción no reconocida."
 
 
-# --- Ejemplo de uso ---
+
 if __name__ == "__main__":
     print("=== Sistema Text-to-SQL Básico ===")
     print("Ejemplos:")
@@ -68,3 +68,4 @@ if __name__ == "__main__":
             break
         resultado = interpretar_texto(comando)
         print(resultado)
+        
