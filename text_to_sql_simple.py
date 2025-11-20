@@ -6,7 +6,7 @@ Base = declarative_base()
 engine = create_engine("sqlite:///personas.db", echo=True)
 Session = sessionmaker(bind=engine)
 session = Session()
-
+session = session()
 # --- Definición del modelo ---
 class Persona(Base):
     __tablename__ = "personas"
